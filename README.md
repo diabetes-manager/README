@@ -1,7 +1,5 @@
 # Proposal For Databetes
 
----
-
 ### What problem does your app solve?
 
 Help diabetics better manage their glucose levels with continuous glucose
@@ -18,8 +16,6 @@ predictions of glucose levels based on machine learning algorithms.
 
 Improve diabetes disease management by helping users store and integrate glucose
 readings and lifestyle data to help better project near-term sugar levels
-
----
 
 ## Features
 
