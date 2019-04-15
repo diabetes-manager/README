@@ -1,4 +1,6 @@
-# Proposal For Databetes
+# Databetes
+
+## Proposal
 
 ### What problem does your app solve?
 
@@ -19,44 +21,43 @@ readings and lifestyle data to help better project near-term sugar levels
 
 ## Features
 
--   What features are required for your minimum viable product?
+### What features are required for your minimum viable product?
 
 1. Mobile friendly dashboard showing blood sugar levels
-2. Model predicting blood sugar levels over the next 30 minutes to 2 hours
+1. Model predicting blood sugar levels over the next 30 minutes to 2 hours
 
--   What features may you wish to put in a future release?
+### What features may you wish to put in a future release?
 
 Add offline model predictions by using machine learning chip in phones Provide
 useful feedback and insights based on the data collected and our model E.g.
 “You’re blood sugar is consistently low in the morning, ask a medical
 professional about adjusting your overnight basal rates.”
 
--   What do the top 3 similar apps do for their users?
+### What do the top 3 similar apps do for their users?
 
 LoopKit Guardian Connect Glooko Frameworks - Libraries
 
--   What 3rd party frameworks/libraries are you considering using? Greensock
+### What 3rd party frameworks/libraries are you considering using? Greensock
+
     Amplify AWS React Postgres Node Express
 
-*   Do APIs require you to contact its maintainer to gain access? Some of the
+### Do APIs require you to contact its maintainer to gain access? Some of the
+
     APIs for getting the large data may need additional support
 
-*   Are you required to pay to use the API? No, and if we run into this, we will
-    drop that API for the scope of this project.
+### Are you required to pay to use the API?
 
-*   Have you considered using Apple Frameworks? (MapKit, Healthkit, ARKit?) Yes.
-    For Data Scientists
+    No, and if we run into this, we will drop that API for the scope of this project.
 
--   Describe the Established data source with at least rough data able to be
-    provided on day 1.
--   You can gather information about the data set you’ll be working with from
-    the project description. Be sure to collaborate with your PM, and your
-    Backend Architect to chat about the resources you have.
--   Write a description for what the DS problem is (what uncertainty/prediction
-    are we trying to do here? Sentiment analysis? Why is this a useful solution
-    to a problem?)
--   A target (e.g. JSON format or such) for output that DS students can deliver
-    to web/other students for them to ingest and use in the app
+### Have you considered using Apple Frameworks? (MapKit, Healthkit, ARKit?) Yes.
+
+## For Data Scientists
+
+### Describe the Established data source with at least rough data able to be provided on day 1.
+
+### You can gather information about the data set you’ll be working with from the project description. Be sure to collaborate with your PM, and your Backend Architect to chat about the resources you have. Write a description for what the DS problem is (what uncertainty/prediction are we trying to do here? Sentiment analysis? Why is this a useful solution to a problem?)
+
+### A target (e.g. JSON format or such) for output that DS students can deliver to web/other students for them to ingest and use in the app
 
 [ The data science problem is predicting a continuous glucose level at a future
 time (within two hours). The major features are the historical glucose readings
