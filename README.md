@@ -56,7 +56,9 @@ APIs for getting the large data may need additional support
 No, and if we run into this, we will drop that API for the scope of this
 project.
 
-### Have you considered using Apple Frameworks? (MapKit, Healthkit, ARKit?) Yes.
+### Have you considered using Apple Frameworks? (MapKit, Healthkit, ARKit?)
+
+Yes.
 
 ## For Data Scientists
 
@@ -118,46 +120,54 @@ system.
 Type one diabetics that use an insulin pump and a continuous glucose monitor. In
 our initial launch phase they will need a web client or an android device
 
-What feedback have you gotten from potential users? “Everything should sync
-automatically, so I don’t have to manually look in multiple places for my CGM
-data vs my pump data, etc” “It would be very helpful if it had push
-notifications that informed me that I need to eat within the next hour and a
-half to two hours” “If I test and my blood glucose is high, it should be able to
-set a timer to notify me to check my glucose progress in X time. Additionally it
-should be able to let me know a timeframe that my glucose should be back in a
-normal range.
+### What feedback have you gotten from potential users?
 
-Have you validated the problem and your solution with your target audience? How?
-[ Team members has validated this problem and potential solution with at least
+> “Everything should sync automatically, so I don’t have to manually look in
+> multiple places for my CGM data vs my pump data, etc”
+
+> “It would be very helpful if it had push notifications that informed me that I
+> need to eat within the next hour and a half to two hours”
+
+> “If I test and my blood glucose is high, it should be able to set a timer to
+> notify me to check my glucose progress in X time. Additionally it should be
+> able to let me know a timeframe that my glucose should be back in a normal
+> range.
+
+### Have you validated the problem and your solution with your target audience? How?
+
+Team members have validated this problem and potential solution with at least
 one diabetic who has been willing to share personalized data for this app. There
 is also secondary research that has indicated the health issues of glucose level
 fluctuations and the limited user friendly options available to both integrate
-different data and provide helpful near-term predictions. ]
+different data and provide helpful near-term predictions.
 
-Research
+## Prototype Key Feature(s)
 
--   Research thoroughly before writing a single line of code. Solidify the
-    features of your app conceptually before implementation. Spend the weekend
-    researching so you can hit the ground running on Monday. Prototype Key
-    Feature(s)
+> This is the “bread and butter” of the app, this is what makes your app yours.
+> Calculate how long it takes to implement these features and triple the time
+> estimated. That way you’ll have plenty of time to finish. It is preferred to
+> drop features and spend more time working on your MVP features if needed.
 
--   This is the “bread and butter” of the app, this is what makes your app
-    yours. Calculate how long it takes to implement these features and triple
-    the time estimated. That way you’ll have plenty of time to finish. It is
-    preferred to drop features and spend more time working on your MVP features
-    if needed.
+## Considerations
 
-Considerations
+Users can set different bolus injection periods:
 
-Users can set different bolus injection periods Normal Bolus: Injects insulin
-all at once (1-2 minutes) Square Wave Bolus: Event injection distribution over
-set time (30 minutes - 8 hours) Dual Wave Bolus: Combination of Normal and
-Square Wave Bolus Users carb to insulin ratio differs There is a medically
-accepted standard that can be used as a jump off point Ideally the prediction
-model will take the standard and modify the ratio based on the users pump
-setting, or observed input data (being carbs consumed and insulin given in both
-basal and bolus Basal rates will differ by user and also need to be calculated,
-these are usually a constant variable per user--or at least change very
-infrequently Data on screenshots for marketing pages should be accurate E.g. if
-the app is showing a blood glucose of 246 mg/dL it shouldn’t then suggest a 15
-unit bolus as that would put them at a negative blood glucose level
+-   Normal Bolus: Injects insulin all at once (1-2 minutes)
+-   Square Wave Bolus: Event injection distribution over set time (30 minutes -
+    8 hours)
+-   Dual Wave Bolus: Combination of Normal and Square Wave Bolus
+
+Users carb to insulin ratio differs:
+
+-   There is a medically accepted standard that can be used as a jump off point
+
+-   Ideally the prediction model will take the standard and modify the ratio
+    based on the users pump setting, or observed input data (being carbs
+    consumed and insulin given in both basal and bolus
+
+Basal rates will differ by user and also need to be calculated, these are
+usually a constant variable per user--or at least change very infrequently
+
+Data on screenshots for marketing pages should be accurate E.g. if the app is
+showing a blood glucose of 246 mg/dL it shouldn’t then suggest a 15 unit bolus
+as that would put them at a negative blood glucose level
