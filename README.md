@@ -53,51 +53,56 @@ LoopKit Guardian Connect Glooko Frameworks - Libraries
 
 ## For Data Scientists
 
-> > Describe the Established data source with at least rough data able to be
-> > provided on day 1. You can gather information about the data set you’ll be
-> > working with from the project description. Be sure to collaborate with your
-> > PM, and your Backend Architect to chat about the resources you have. Write a
-> > description for what the DS problem is (what uncertainty/prediction are we
-> > trying to do here? Sentiment analysis? Why is this a useful solution to a
-> > problem?) A target (e.g. JSON format or such) for output that DS students
-> > can deliver to web/other students for them to ingest and use in the app
+> Describe the Established data source with at least rough data able to be
+> provided on day 1. You can gather information about the data set you’ll be
+> working with from the project description. Be sure to collaborate with your
+> PM, and your Backend Architect to chat about the resources you have. Write a
+> description for what the DS problem is (what uncertainty/prediction are we
+> trying to do here? Sentiment analysis? Why is this a useful solution to a
+> problem?) A target (e.g. JSON format or such) for output that DS students can
+> deliver to web/other students for them to ingest and use in the app
 
-[ The data science problem is predicting a continuous glucose level at a future
+The data science problem is predicting a continuous glucose level at a future
 time (within two hours). The major features are the historical glucose readings
 and other lifestyle and physiological factors such as dietary details, exercise,
 amount of sleep, and heart rate. This is a time series sequence problem. Glucose
 levels can be highly variable depending on current levels and the type of food
 intake. The initial training data will be customized to one or two individuals
 due to difficulty of data access and the value of customized personal
-healthcare. Going forward the model accuracy potentially could improve by
-factoring some weight in a larger number of individuals but the likely important
-features will still be the user’s personalized historical readings and detailed
-food intake data.Our initial idea is to try baseline time series methods,
-gradient boosted trees, and a recurrent neural network (long short-term memory).
-The current problem has two main issues that data science and this proposed app
-could help solve. First, data is not well integrated and secondly the data is
-not used for prediction but instead requires diabetics to make rough judgments
-based on experience and high level physician recommendations. The app can
-potentially help diabetics become better aware of the impact of food and other
-lifestyle factors have on their near term glucose levels and improve their
-disease management. One difficulty with data management is that we ideally want
-to train data online as the user inputs new data several times a day and it
+healthcare.
+
+Going forward the model accuracy potentially could improve by factoring some
+weight in a larger number of individuals but the likely important features will
+still be the user’s personalized historical readings and detailed food intake
+data.Our initial idea is to try baseline time series methods, gradient boosted
+trees, and a recurrent neural network (long short-term memory). The current
+problem has two main issues that data science and this proposed app could help
+solve. First, data is not well integrated and secondly the data is not used for
+prediction but instead requires diabetics to make rough judgments based on
+experience and high level physician recommendations.
+
+The app can potentially help diabetics become better aware of the impact of food
+and other lifestyle factors have on their near term glucose levels and improve
+their disease management. One difficulty with data management is that we ideally
+want to train data online as the user inputs new data several times a day and it
 needs to feed into the model to update the predictions for the next targeted
 time frame. If the app is integrated with the other wearable devices, the
 continuous glucose readings and heart rate data should feed directly into a
 database. Once the user inputs other necessary data and clicks on prediction,
 the model should factor in the historical stored data plus other input data and
-return back to the app the projected readings. Down the line other features
-could be push notifications for other projections that require continuous data
-flow and modeling. For example once a high reading occurs, a simulated
-projection of how much time it will take until glucose decreases back to a
-normal range, a projected time frame for next meal to avoid sugar levels
-dropping significantly, alerts for reading errors in connected devices, a day
-planner simulation (input ahead of time what an outlier day could be like that
-restricts or impacts eating times like due to travel etc. and simulate what the
-levels could be to help user safely plan ahead of time) and exportable data for
-user to share with doctor if desired. The current thought on data format is to
-convert the data results into JSON and sent to the backend system.]
+return back to the app the projected readings.
+
+Down the line other features could be push notifications for other projections
+that require continuous data flow and modeling. For example once a high reading
+occurs, a simulated projection of how much time it will take until glucose
+decreases back to a normal range, a projected time frame for next meal to avoid
+sugar levels dropping significantly, alerts for reading errors in connected
+devices, a day planner simulation (input ahead of time what an outlier day could
+be like that restricts or impacts eating times like due to travel etc. and
+simulate what the levels could be to help user safely plan ahead of time) and
+exportable data for user to share with doctor if desired. The current thought on
+data format is to convert the data results into JSON and sent to the backend
+system.]
 
 Target Audience
 
