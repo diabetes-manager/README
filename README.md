@@ -37,17 +37,24 @@ professional about adjusting your overnight basal rates.”
 
 LoopKit Guardian Connect Glooko Frameworks - Libraries
 
-### What 3rd party frameworks/libraries are you considering using? Greensock
+### What 3rd party frameworks/libraries are you considering using?
 
-    Amplify AWS React Postgres Node Express
+-   Greensock
+-   Amplify
+-   AWS
+-   React
+-   Postgres
+-   Node
+-   Express
 
 ### Do APIs require you to contact its maintainer to gain access? Some of the
 
-    APIs for getting the large data may need additional support
+APIs for getting the large data may need additional support
 
 ### Are you required to pay to use the API?
 
-    No, and if we run into this, we will drop that API for the scope of this project.
+No, and if we run into this, we will drop that API for the scope of this
+project.
 
 ### Have you considered using Apple Frameworks? (MapKit, Healthkit, ARKit?) Yes.
 
@@ -102,13 +109,14 @@ be like that restricts or impacts eating times like due to travel etc. and
 simulate what the levels could be to help user safely plan ahead of time) and
 exportable data for user to share with doctor if desired. The current thought on
 data format is to convert the data results into JSON and sent to the backend
-system.]
+system.
 
-Target Audience
+## Target Audience
 
-Who is your target audience? Be specific. Type one diabetics that use an insulin
-pump and a continuous glucose monitor. In our initial launch phase they will
-need a web client or an android device
+### Who is your target audience? Be specific.
+
+Type one diabetics that use an insulin pump and a continuous glucose monitor. In
+our initial launch phase they will need a web client or an android device
 
 What feedback have you gotten from potential users? “Everything should sync
 automatically, so I don’t have to manually look in multiple places for my CGM
