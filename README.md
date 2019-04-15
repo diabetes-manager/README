@@ -53,11 +53,14 @@ LoopKit Guardian Connect Glooko Frameworks - Libraries
 
 ## For Data Scientists
 
-### Describe the Established data source with at least rough data able to be provided on day 1.
-
-### You can gather information about the data set you’ll be working with from the project description. Be sure to collaborate with your PM, and your Backend Architect to chat about the resources you have. Write a description for what the DS problem is (what uncertainty/prediction are we trying to do here? Sentiment analysis? Why is this a useful solution to a problem?)
-
-### A target (e.g. JSON format or such) for output that DS students can deliver to web/other students for them to ingest and use in the app
+> > Describe the Established data source with at least rough data able to be
+> > provided on day 1. You can gather information about the data set you’ll be
+> > working with from the project description. Be sure to collaborate with your
+> > PM, and your Backend Architect to chat about the resources you have. Write a
+> > description for what the DS problem is (what uncertainty/prediction are we
+> > trying to do here? Sentiment analysis? Why is this a useful solution to a
+> > problem?) A target (e.g. JSON format or such) for output that DS students
+> > can deliver to web/other students for them to ingest and use in the app
 
 [ The data science problem is predicting a continuous glucose level at a future
 time (within two hours). The major features are the historical glucose readings
