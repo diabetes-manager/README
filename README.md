@@ -1,4 +1,4 @@
-# Databetes
+# GlucoseIQ
 
 ## Proposal
 
